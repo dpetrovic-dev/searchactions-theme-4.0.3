@@ -1,0 +1,59 @@
+<!-- **************************************************************************
+*******************************************************************************
+			
+       HORIZONTAL ACCORDIAN (NORMAL ACCORDIAN IS VERTICLE)
+                         
+*******************************************************************************
+*******************************************************************************-->
+
+
+<style>
+.accordion .accordion-item {
+	display: inline-block;
+	    width: 32%;
+}
+
+.accordion-content {
+	background:transparent;border:none;position:absolute;left:0;right:0;
+	width:100%;max-width: 100%;
+	
+}
+.accordion-content-position{
+	display:block;max-width:100%;margin-left:auto;margin-right:auto;text-align:center;width:100%;
+	}
+.myaccordian{display:block;position:relative;width:100%;max-width:100%;display:block;margin:0 auto}
+</style>
+
+<div class="row">
+<div class="myaccordian">
+<div class="accordion" data-accordion data-allow-all-closed="true">
+  
+  <div class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Accordion 1</a>
+    <div class="accordion-content" data-tab-content>
+        <div class="accordion-content-position">
+         1
+        </div>
+    </div>
+  </div>
+  
+   <div class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Accordion 2</a>
+    <div class="accordion-content" data-tab-content>
+      <div class="accordion-content-position">
+        2
+        </div>
+    </div>
+  </div>
+  
+     <div class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Accordion 2</a>
+    <div class="accordion-content" data-tab-content>
+      <div class="accordion-content-position">
+         3
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

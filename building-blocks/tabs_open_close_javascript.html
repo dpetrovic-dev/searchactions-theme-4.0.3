@@ -1,0 +1,178 @@
+<!-- **************************************************************************
+*******************************************************************************
+			
+       TABS WITH ARROW POINTING DOWN AND JAVASCRIPT THAT WILL CLOSE OPEN TABS ON CLICK
+       - ref: http://jsfiddle.net/x8rfge06/
+       - normal version at bottom (no arrows)
+                         
+*******************************************************************************
+*******************************************************************************-->
+<!--- CSS -->
+<style>
+/* tabs title arrow down to content */
+.mobile_button_tabs {text-align:center;}
+.mobile_button_tabs .tabs-title.current span{position:relative;}
+.mobile_button_tabs .tabs-title.current span::after{  
+	border-color: #403C8B transparent;
+    border-style: solid;
+    border-width: 10px 10px 0;
+   display:block;
+   top:2.2rem;
+    content: "";
+    height: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    width: 0;}
+
+/* END IMPORTANT */
+.tabs{background:#fff}
+.tabs.mobile_button_tabs{border:none;}
+
+ /* tabs title (buttons) */
+ .mobile_button_tabs .columns{padding:0;border:none;}
+ .mobile_button_tabs .columns.tabs-title{border-right:1px solid #e8e8e8;border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;}
+ .mobile_button_tabs .columns.tabs-title:last-child{border-right:none;}
+  .mobile_button_tabs .columns.tabs-title.is-active{border-bottom:none;border-right:1px solid #fff;}
+.tabs-title>a:focus, .tabs-title>a[aria-selected=true]{background:#403C8B;border-bottom:1px solid #403C8B;text-shadow:1px solid #1C1A3C}
+
+/* tab title normal */
+.mobile_button_tabs .tabs-title {display: inline-block;height:100%;margin-bottom:0;}
+.mobile_button_tabs .tabs-title,
+.mobile_button_tabs .tabs-title.current{font-size:.75em;line-height:.95rem;font-weight:700;opacity:1.0;padding:.95rem 0 .5rem 0;text-transform:uppercase}
+
+/* font awesome icon arrow down */
+.mobile_button_tabs .tabs-title> i{display:block;}
+.mobile_button_tabs .tabs-title.current> i,
+.mobile_button_tabs .tabs-title.current>:hover i{color:#fff;text-shadow:none;}
+.mobile_button_tabs .tabs-title.current> i,
+.mobile_button_tabs .tabs-title:hover i{color:#403C8B;text-shadow:none;}
+
+/* tabs title link active/hover/focus */
+.mobile_button_tabs .tabs-title:hover,
+.mobile_button_tabs .tabs-title:focus,
+.mobile_button_tabs .tabs-title.current{background:#403C8B;color:#fff;text-shadow:1px 1px 1px #1C1A3C}
+
+/* Active Tab Title and content below*/
+.mobile_buttons .tabs-panel .columns{border-right:none}
+.mobile_buttons .tabs-panel .tabs_content_wrapper{display:block;}
+
+/* tab content */
+.mobile_buttons .tab-content {display: none;}
+.mobile_buttons .tab-content.current{display: block;}
+
+/* tabs content */
+.mobile_buttons .tabs_content_wrapper p{text-align:center}
+.mobile_buttons .tabs_content_wrapper p,
+.mobile_buttons .tabs_content_wrapper a{color: #2199e8;line-height:1.6;font-size:.95rem;text-decoration:underline}
+.mobile_buttons .tabs_content_wrapper ul li,
+.mobile_buttons .tabs_content_wrapper p,
+.mobile_buttons .tabs_content_wrapper img,
+.mobile_buttons .tabs_content_wrapper h2
+{margin-bottom:.5rem}
+.mobile_buttons .tabs_content_wrapper h2{font-size:1rem;}
+ .mobile_buttons .tabs_content_wrapper img{padding:.25rem;border:1px solid #e8e8e8;}
+.mobile_button_tabs .tabs-content{border-right:none;border-left:none;}
+</style>
+
+<!--- JAVASCRIPT -->
+<script defer type="text/javascript">
+jQuery('ul.tabs li').click(function () {
+        var tab_id = jQuery(this).attr('data-tab');
+
+        jQuery('ul.tabs li').not('[data-tab='+tab_id+']').removeClass('current');
+        jQuery('.tab-content:not(#'+tab_id+')').removeClass('current');
+
+        jQuery(this).toggleClass('current');
+        jQuery("#" + tab_id).toggleClass('current');
+
+    })
+</script>
+
+<!--- HTML -->
+    <ul class="tabs mobile_button_tabs">
+    
+        <li class="tab-link tabs-title location_tabs small-4 columns" data-tab="tab-1"><span>Aston</span><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></li>
+        
+        <li class="tab-link tabs-title location_tabs small-4 columns" data-tab="tab-2"><span>Malvern</span> <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></li>
+        
+        <li class="tab-link tabs-title location_tabs small-4 columns" data-tab="tab-3"><span>Wilmington </span><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></li>
+       
+        
+    </ul>
+    
+    <div class="tabs-content">
+    	<!-- TAB 1 CONTENT -->
+        <div id="tab-1" class="tab-content tabs-panel">
+        	<div class="tabs_content_wrapper">
+                <div class="row">
+                    <div class="small-12 columns">
+                    <h2>Badell's Collision of <span>Aston</span></h2>
+                    <p><img class="img-center" src="/wp-content/uploads/auto-body-shop-aston.jpg" alt="auto-body-shop-aston" width="346" height="180"></p>
+                    <ul>
+                        <li>143 Conchester Highway Aston, PA 19014</li>
+                        <li>Directions: <a href="https://goo.gl/maps/acrfRagmPZD2" title="Google Directions to Badell's Collision Aston, PA" target="_blank">Click Here</a></li>
+                        <li>Phone: <a href="tel:6104854411">(610) 485-4411</a></li>
+                        <li>Fax: (610) 497-8887</li>
+                        <li>Email: <a href="mailto:info@badellscollision.com">info@badellscollision.com</a></li>
+                    </ul>
+                    </div>
+                    </div>
+                </div>
+        </div>
+        <!-- TAB 2 CONTENT -->
+        <div id="tab-2" class="tab-content tabs-panel">Malvern</div>
+        <div id="tab-3" class="tab-content tabs-panel">Wilmington</div>
+</div>
+
+<!-- **************************************************************************
+*******************************************************************************
+			
+       TABS WITH ARROW POINTING DOWN AND JAVASCRIPT THAT WILL CLOSE OPEN TABS ON CLICK (NORMAL VERSION)
+       - ref: http://jsfiddle.net/x8rfge06/
+                         
+*******************************************************************************
+*******************************************************************************-->
+<!-- JAVASCRIPT -->
+<script>
+ jQuery('ul.tabs li').click(function () {
+        var tab_id = jQuery(this).attr('data-tab');
+
+        jQuery('ul.tabs li').not('[data-tab='+tab_id+']').removeClass('current');
+        jQuery('.tab-content:not(#'+tab_id+')').removeClass('current');
+
+        jQuery(this).toggleClass('current');
+        jQuery("#" + tab_id).toggleClass('current');
+		
+		
+    })
+
+</script>
+
+<!-- CSS -->
+<style>
+.tabs-container {width: 100%; margin: 0 auto;}
+
+ul.tabs {margin: 0px; padding: 0px; list-style: none; text-align:center; background: #181818; height:40px; border-top:1px solid #303132}
+
+ul.tabs li { background: #181818; height:20px; line-height:25px; color: #fff; display: inline-block; padding: 10px 15px; cursor: pointer;}
+ul.tabs li:hover {background:#000;}
+
+ul.tabs li.current{background: #000;color: #fff;}
+
+.tab-content {display: none; background: #000; float:left; position:relative; padding:0px; padding-bottom:5px; padding-left:0px; padding-right:0px; font-size:12px; width:100%; color:#fff}
+
+.tab-content.current{display: block;}
+</style>
+
+<!-- HTML -->
+<div class="tabs-container">
+    <ul class="tabs">
+        <li class="tab-link" data-tab="tab-1">Content One Tab</li>     
+        <li class="tab-link" data-tab="tab-2">Content Two Tab</li>   
+    </ul> 
+    <div id="tab-1" class="tab-content">Content One</div>
+    <div id="tab-2" class="tab-content">Content Two</div> 
+</div>

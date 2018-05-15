@@ -1,0 +1,50 @@
+{
+    "key": "group_58ae0e751404a",
+    "title": "footer-export",
+    "fields": [
+        {
+            "key": "field_58ae0e8ea2d88__trashed",
+            "label": "Choose Footer to Display",
+            "name": "global_footer_selector",
+            "type": "select",
+            "instructions": "<p>Choose the the content you would like to show in the footer.   You can choose from the following footers:<br><\/br>\r\n1. <strong>Default Footer<\/strong>: shows location, hours, directions, pages, latest articles and email subscription form<\/br>\r\n2.  <strong>Widgets<\/strong>: 4 Column Footer setup using the <a href=\"\/wp-admin\/widgets.php\">\"WordPress Widgets\"<\/a><\/br>\r\n3. <strong>Custom Footer<\/strong>:  Blank row that allows you to enter in your own html<\/p>\r\n<p>To customize the \"Widgets\" Footer, go to the <a href=\"\/wp-admin\/widgets.php\">\"Widget Settings\"<\/a> and drag the widgets you would like to display into the corresponding widget containers.  The containers for the footer are Footer 1, Footer 2, Footer 3 and Footer 4. <\/p>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "default": "Use Default Footer",
+                "widgets": "Use Widgets",
+                "custom": "Custom Footer"
+            },
+            "default_value": [],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1487802134
+}

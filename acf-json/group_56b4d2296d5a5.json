@@ -1,0 +1,154 @@
+{
+    "key": "group_56b4d2296d5a5",
+    "title": "Global Social Media Settings",
+    "fields": [
+        {
+            "key": "field_56b3dcd3c2344",
+            "label": "Social Media",
+            "name": "social_media",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56b401c469c85",
+            "label": "Instructions",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 100,
+                "class": "",
+                "id": ""
+            },
+            "message": "Let's link to your social media pages!  Please type in the full link to your company's business page on the social media networks below.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_56a68d8750c25",
+            "label": "Google + URL",
+            "name": "global_google",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "google",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "EX: https:\/\/plus.google.com\/+Searchactions"
+        },
+        {
+            "key": "field_56b3f97b1da08",
+            "label": "Facebook",
+            "name": "global_facebook",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "facebook",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "EX: https:\/\/www.facebook.com\/searchactions"
+        },
+        {
+            "key": "field_56b3f98d1da09",
+            "label": "Twitter",
+            "name": "global_twitter",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "twitter",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "EX: https:\/\/twitter.com\/searchactions"
+        },
+        {
+            "key": "field_56b3f9a21da0a",
+            "label": "LinkedIN",
+            "name": "global_linkedin",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "linkedin",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "EX: https:\/\/www.linkedin.com\/company\/searchactions"
+        },
+        {
+            "key": "field_56b3f9c01da0c",
+            "label": "Pintrest",
+            "name": "global_pintrest",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "pintrest",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_56b3f9ce1da0d",
+            "label": "Instagram",
+            "name": "global_instagram",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "instagram",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-social-media-settings"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1478375882,
+    "local": "json"
+}

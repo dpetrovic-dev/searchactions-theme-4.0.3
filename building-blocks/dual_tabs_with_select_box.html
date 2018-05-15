@@ -1,0 +1,106 @@
+<!-- **************************************************************************
+*******************************************************************************
+			
+       DUAL TABS WITH SCRIPT TO DISPLAY SELECT OPTION IN A TAB
+                         
+*******************************************************************************
+*******************************************************************************-->
+
+
+<!-------------------------------------------------------------------------
+			
+       							CSS
+                         
+---------------------------------------------------------------------------->
+<style>
+#tabs{margin-bottom:0}
+.dual_tabs .tabs{background:none;border:none}
+.dual_tabs .tabs-panel{padding:0}
+.dual_tabs .tabs-content{border:none;background:none;}
+.dual_tabs .tabs-title{border-radius:5px 5px 0 0;text-align:center;width:50%}
+.dual_tabs .tabs-title{position:relative}
+.dual_tabs .tabs-title > a[aria-selected="true"]::after{  
+	border-color: #d05e5f transparent;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    bottom: -.5rem;
+    content: "";
+    height: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    width: 0;}
+.dual_tabs .tabs-title > a{opacity:0.5}
+.dual_tabs .tabs-title,.dual_tabs .tabs-title > a:hover{background:#1C1A3C;}
+.dual_tabs .tabs-title > a[aria-selected="true"]{opacity:1.0}
+.dual_tabs .tabs-title > a[aria-selected="true"]{background:#d05e5f;}
+.dual_tabs .tabs-title > a[aria-selected="true"],.dual_tabs .button{font-weight:700}
+.dual_tabs .tabs-title > a[aria-selected="true"],.dual_tabs .tabs-title > a:hover{border-radius:5px 5px 0 0}
+.dual_tabs .tabs-title > a{color:#fff;padding:1rem}
+.dual_tabs .tabs-title .fa{padding-right:5px}
+.dual_tabs fieldset{padding:1rem .75rem}
+.dual_tabs .frm_form_field{margin-bottom:.75rem}
+.dual_tabs .tab_content_wrapper{background:#fafafa;}
+
+/* label */
+label{display:none;}
+
+/* Tab Content */
+.dual_tabs li{margin-bottom:0}
+.dual_tabs .tab_content_wrapper{background:#fafafa;}
+.tab_content_wrapper .frm_form_field,.tab_content_wrapper p,.tab_content_wrapper img{margin-bottom:.25rem}
+.tab_content_wrapper p,.tab_content_wrapper li,.tab_content_wrapper a{font-size:.75rem;text-align:left;}
+.tab_content_wrapper ul{margin-bottom:0}
+.tab_content_wrapper span{font-weight:700;}
+.tab_content_wrapper strong{color:#000}
+.tab_content_wrapper img{background:#e8e8e8;border:1px solid #c1c1c1;padding:.25rem;}
+
+</style>
+<!-------------------------------------------------------------------------
+			
+            			HTML
+                         
+---------------------------------------------------------------------------->
+<div class="dual_tabs show-for-large">
+<div class="small-12 large-4 large-offset-1 columns">
+<ul id="tabs" class="tabs" data-tabs="">
+ 	<li class="tabs-title is-active"><a href="#tab1"><i class="fa fa-calendar"></i> TAB 1</a></li>
+ 	<li class="tabs-title"><a href="#tab2"><i class="fa fa-map-marker"></i>TAB 2</a></li>
+</ul>
+<div class="tabs-content" data-tabs-content="tabs">
+<div id="tab1" class="tabs-panel is-active">[formidable id="12"]</div>
+<div id="tab2" class="tabs-panel">
+<div class="tab_content_wrapper">
+<fieldset>
+<div class="frm_form_field"><select class="selectOption frm_form_field">
+<option disabled="disabled" selected="selected" value="">Choose Location</option>
+<option>Option 1</option>
+<option>Option 2</option>
+</select></div>
+<div id="changingArea">
+    <div id="option-1" class="desc">
+        <p>CONTENT FOR OPTION 1</p>
+    </div>
+
+    <div id="option-2" class="desc">
+        <p>CONTENT FOR OPTION 2</p>
+    </div>
+</div></fieldset>
+</div>
+<script type="text/javascript">
+$(function(){
+      $('.selectOption').change(function(){
+        var selected = $(this).find(':selected').text();
+        //alert(selected);
+        $(".desc").hide();
+         $('#' + selected).show();
+      }).change()
+ });
+</script>
+
+</div>
+</div>
+</div>
+</div>

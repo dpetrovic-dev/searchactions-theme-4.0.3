@@ -1,0 +1,98 @@
+{
+    "key": "group_57ed1d58372e8",
+    "title": "Insert Scripts",
+    "fields": [
+        {
+            "key": "field_57eea8ca4b0ce",
+            "label": "Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5699726a6957b",
+            "label": "Insert Code in Header",
+            "name": "global_insert_code_header",
+            "type": "textarea",
+            "instructions": "Insert scripts or inline styles in header.  If inserting styles, make sure they are placed <strong>above<\/strong> scripts.   This code will be placed above opening <body> tag.<\/br>   <span style=\"color:red\">Do not place Typekit script here.  If using Typekit, include that in the option above \"Insert TypeKit in Header (Fonts)\".",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57eea8b44b0cd",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57ed1d583b732",
+            "label": "Insert Code in Footer",
+            "name": "global_insert_code_footer",
+            "type": "textarea",
+            "instructions": "Insert scripts or inline styles in footer.  If inserting styles, make sure they are placed <strong>above<\/strong> scripts.  This code will be placed above closing <body> tag.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 100,
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-insert-scripts-styles"
+            }
+        ]
+    ],
+    "menu_order": 6,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1513555476
+}

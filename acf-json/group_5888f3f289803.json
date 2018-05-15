@@ -1,0 +1,119 @@
+{
+    "key": "group_5888f3f289803",
+    "title": "Display Latest Posts?",
+    "fields": [
+        {
+            "key": "field_5888f3fcc1d1c",
+            "label": "Display Latest Posts?",
+            "name": "global_homepage_display_latest_posts",
+            "type": "true_false",
+            "instructions": "Check the box below to display latest posts on homepage, above footer.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_58a0bb4769b18",
+            "label": "Change Title of Latest Posts",
+            "name": "global_homepage_display_latest_posts_title",
+            "type": "text",
+            "instructions": "The title for this section is set to \"Latest News & Events\".   You can change it here.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5888f3fcc1d1c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59304a8f53ff5",
+            "label": "Choose Category of Posts to Display",
+            "name": "global_select_category_of_posts_to_display",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5888f3fcc1d1c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "service-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "acftc-group-0",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1513521378
+}

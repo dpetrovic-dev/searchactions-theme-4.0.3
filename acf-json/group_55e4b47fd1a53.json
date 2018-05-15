@@ -1,0 +1,62 @@
+{
+    "key": "group_55e4b47fd1a53",
+    "title": "1. Select Page Layout (Full Width or Boxed)",
+    "fields": [
+        {
+            "key": "field_56ae959fa224e",
+            "label": "Select Page Layout (Box or Full Width)",
+            "name": "local_page_layout_select",
+            "type": "select",
+            "instructions": "Select the page layout you would like for this page - boxed or full width.   A full width layout will stretch to the edges of the screen, while a boxed layout will sit in the middle of the screeen in a \"container\" or box.    <br><br>\r\n<img src=\"\/wp-content\/themes\/searchactions\/assets-admin\/img\/layout-comparison-box-wide.png\">",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "full": "Full Width",
+                "box": "Boxed Layout"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 101,
+    "position": "acf_after_title",
+    "style": "acftc-group-0",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "discussion",
+        "comments",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1513347991
+}

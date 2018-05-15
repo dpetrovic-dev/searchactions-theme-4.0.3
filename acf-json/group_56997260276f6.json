@@ -1,0 +1,705 @@
+{
+    "key": "group_56997260276f6",
+    "title": "Global Company Settings",
+    "fields": [
+        {
+            "key": "field_56b4d03511371",
+            "label": "Logo",
+            "name": "logo",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56b4d03515188",
+            "label": "Upload Logo",
+            "name": "global_logo",
+            "type": "image",
+            "instructions": "Please upload your logo or select it from the media gallery if you have already uploaded it.  If you do not upload a logo, your company name will be used in it's place.   Size of logo should be 147px (width)  X 150px (height)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium_large",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_56b3f85d69fe5",
+            "label": "Main Business Info",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56b3f89969fe6",
+            "label": "Business Name, Address and Phone Number",
+            "name": "",
+            "type": "message",
+            "instructions": "Enter the name, address and phone number of your business.   If you have multiple locations, list them on the \"Other Locations\" tab.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Enter the name, address and phone number of your business. If you have multiple locations, list them on the \"Other Locations\" tab.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_56b4d47ee068f",
+            "label": "Legal Company Name",
+            "name": "global_company_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56b4d4cde0690",
+            "label": "Address",
+            "name": "global_company_address",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 40,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56b4d509e0691",
+            "label": "Suite, Unit, Apt#",
+            "name": "global_company_address2",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 10,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56b4d545e0692",
+            "label": "City",
+            "name": "global_company_city",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 15,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56b8d2bb08a3a",
+            "label": "County",
+            "name": "global_company_county",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 15,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56b4d552e0693",
+            "label": "State",
+            "name": "global_company_state",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 10,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56b4d55ae0694",
+            "label": "Zip",
+            "name": "global_company_zip",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 10,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56b4d39ae068d",
+            "label": "Primary Email Address",
+            "name": "global_email_address",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_56b50fbdc0bc6",
+            "label": "Primary Phone Number",
+            "name": "global_phone_primary",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "EX: 5555551212 (no spaces\/dashes)",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56b4d3c2e068e",
+            "label": "Toll Free Phone Number",
+            "name": "global_phone_tollfree",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "EX: 8005551212 (no spaces\/dashes)",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57ed6943aed57",
+            "label": "Fax Number",
+            "name": "global_fax",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "EX: 5555551212 (no spaces\/dashes)",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56b4f22c210ea",
+            "label": "Directions",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56b4f3a8c8a33",
+            "label": "Help Customers Find Your Business",
+            "name": "help_customers_find_your_business",
+            "type": "message",
+            "instructions": "<p>Providing directions on your website is helpful to customers (and potential customers) trying to find your business.   In the fields below, provide directions to your business on popular mapping providers such as Google, Bing and the Waze mobile app.<\/p>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Providing directions on your website is helpful to customers (and potential customers) trying to find your business.   In the fields below, provide directions to your business on popular mapping providers such as Google, Bing and the Waze mobile app.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_56b4dd4cde0be",
+            "label": "Google Maps",
+            "name": "global_directions_google",
+            "type": "url",
+            "instructions": "<p>Enter the full URL to your business location on Google Maps.   Here's how: <\/p>\r\n<div class=\"half\">\r\n<ol>\r\n<li>Go to <a href=\"http:\/\/www.google.com\/maps\/\" target=\"_blank\">http:\/\/www.google.com\/maps\/<\/a><\/li>\r\n<li>Search for your business<\/li>\r\n<li>When you find your business, click on \"Share\" and then \"Share Link\" (Not embed map).   <\/li>\r\n<li>Copy the link and paste it in the box below<\/li>\r\n<\/ol>\r\n<\/div>\r\n<div class=\"half\">\r\n<img src=\"http:\/\/c.delicatesmilesdental.com\/wp-content\/themes\/searchactions-child\/assets_admin\/img\/maps_google.jpg\">\r\n<\/div>\r\n<div class=\"clearfix\"><\/div>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "insert_favicon google grey",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Insert Google Maps Link"
+        },
+        {
+            "key": "field_56b4de70de0bf",
+            "label": "Bing Maps",
+            "name": "global_directions_bing",
+            "type": "url",
+            "instructions": "<p>Enter the full URL to your business location on Bing Maps.   Here's how: <\/P>\r\n<div class=\"half\">\r\n<ol>\r\n<li>Go to <a href=\"http:\/\/www.bing.com\/mapspreview\" target=\"_blank\">http:\/\/www.bing.com\/mapspreview<\/a><\/li>\r\n<li>Search for your business<\/li>\r\n<li>When you find your business, click on the 3 dots at the top of your business listing and select \"Share\"<\/li>\r\n<li>On the next screen that pops up, select your business and then copy the link that is generated in the box <\/li>\r\n<li>Copy the link and paste it in the box below<\/li>\r\n<\/ol>\r\n<\/div>\r\n<div class=\"half\">\r\n<img src=\"http:\/\/c.delicatesmilesdental.com\/wp-content\/themes\/searchactions-child\/assets_admin\/img\/maps_bing.jpg\">\r\n<\/div>\r\n<div class=\"clearfix\"><\/div>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "bing insert_icon",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Insert Bing Maps Link"
+        },
+        {
+            "key": "field_56b4de9ade0c0",
+            "label": "Waze App",
+            "name": "global_directions_waze",
+            "type": "url",
+            "instructions": "<p>Enter the full URL to your business location on Waze Maps.   Here's how: <\/P>\r\n<div class=\"half\">\r\n<ol>\r\n<li>Go to <a href=\"https:\/\/www.waze.com\/livemap\" target=\"_blank\">https:\/\/www.waze.com\/livemap<\/a><\/li>\r\n<li>Search for your business<\/li>\r\n<li>Your business should show up on the map as a blue map icon.   Click on the map icon<\/li>\r\n<li>Under \"Selected location\", click \"Permalink\"<\/li>\r\n<li>Copy the link and paste it in the box below<\/li>\r\n<\/ol>\r\n<\/div>\r\n<div class=\"half\">\r\n<img src=\"http:\/\/c.delicatesmilesdental.com\/wp-content\/themes\/searchactions-child\/assets_admin\/img\/maps_waze.jpg\">\r\n<\/div>\r\n<div class=\"clearfix\"><\/div>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "waze insert_icon grey",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Insert Waze Maps Link"
+        },
+        {
+            "key": "field_56b3ea51c092a",
+            "label": "Other Locations",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56b3dc17fe109",
+            "label": "List Your Other Physical Locations",
+            "name": "global_locations",
+            "type": "repeater",
+            "instructions": "If you have multiple locations, enter each one here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add a Location",
+            "sub_fields": [
+                {
+                    "key": "field_56b50e4b9e24a",
+                    "label": "Location Name",
+                    "name": "global_locations_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_56b50e639e24b",
+                    "label": "Address",
+                    "name": "global_locations_address",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_56b50e6c9e24c",
+                    "label": "Suite\/Apt#\/Unit",
+                    "name": "global_locations_address2",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_56b50e819e24d",
+                    "label": "City",
+                    "name": "global_locations_city",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_56b50e8a9e24e",
+                    "label": "State",
+                    "name": "global_locations_state",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_56b50e9a9e24f",
+                    "label": "Zip",
+                    "name": "global_locations_zip",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_56b50ea49e250",
+                    "label": "Phone",
+                    "name": "global_locations_phone",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "EX: (555) 555-1212",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_56b4ca207541a",
+            "label": "Business Hours",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "css_property": "",
+            "css_selector": "",
+            "property_append": ""
+        },
+        {
+            "key": "field_56b4f795b6bb6",
+            "label": "Enter your Opening and Closing Hours",
+            "name": "global_location_main_hours",
+            "type": "repeater",
+            "instructions": "<p>Click on the \"Add Day\" button to add the days and times your business is open.   Do not add days when your business is closed<\/p>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add a Day",
+            "sub_fields": [
+                {
+                    "key": "field_56b50d45e6aa0",
+                    "label": "Select Day",
+                    "name": "global_hours_day",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Monday": "Monday",
+                        "Tuesday": "Tuesday",
+                        "Wednesday": "Wednesday",
+                        "Thursday": "Thursday",
+                        "Friday": "Friday",
+                        "Saturday": "Saturday",
+                        "Sunday": "Sunday"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_56b50d62e6aa1",
+                    "label": "Opening Time",
+                    "name": "global_hours_open",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "EX: 9:00 AM",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_56b50d70e6aa2",
+                    "label": "Closing Time",
+                    "name": "global_hours_close",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "EX: 5:00 PM",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-company-settings"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1478375882,
+    "local": "json"
+}

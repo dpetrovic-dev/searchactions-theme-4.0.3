@@ -1,0 +1,1575 @@
+{
+    "key": "group_579e444d403b9",
+    "title": "2. Set Up Banner",
+    "fields": [
+        {
+            "key": "field_579e444d45580",
+            "label": "Do You Want a Banner On This Page?",
+            "name": "page_banner_select",
+            "type": "radio",
+            "instructions": "Check the box if you would like to display a banner on this page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "vertical",
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5801222c6574c",
+            "label": "(Optional) Add a Class to the Banner",
+            "name": "page_banner_add_class",
+            "type": "text",
+            "instructions": "Add a class to the banner.  Do not include a period before the class name.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_583326c56a878",
+            "label": "Add Padding to Banner?",
+            "name": "page_banner_add_padding",
+            "type": "text",
+            "instructions": "Add padding to top and bottom of banner.   Enter in the padding using a number and measurement (em,rem,px, etc) with no spacing in between.   IE - 2rem or 30px.   Padding will be applied to top and bottom of banner.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Example:  3rem",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_580d1eedd49c4",
+            "label": "Choose Banner Layout",
+            "name": "page_banner_layout",
+            "type": "radio",
+            "instructions": "Choose the layout for the banner",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "banners",
+                "id": ""
+            },
+            "layout": "vertical",
+            "choices": {
+                "banner1": "Banner 1",
+                "banner2": "Banner 2",
+                "banner3": "Banner 3",
+                "banner4": "Banner 4",
+                "bannerinside": "Inside Page Banner"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_58332b194fcc8",
+            "label": "Use Background Image as Height of Banner?",
+            "name": "page_banner_background_height",
+            "type": "true_false",
+            "instructions": "Check the box if you would like to use the height of the background image as the height of the banner.   If you leave unchecked, the banner height will be set to auto and will be determined by the content within it.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580bbcb5cb332",
+                        "operator": "==",
+                        "value": "background"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_580bbbf17dfc7",
+                        "operator": "==",
+                        "value": "background"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_580baf26523e0",
+                        "operator": "==",
+                        "value": "background"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5810dfeddddc8",
+                        "operator": "==",
+                        "value": "background"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57ab452390310",
+            "label": "Custom Banner",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    },
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "==",
+                        "value": "banner4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57ab456890311",
+            "label": "Banner Content",
+            "name": "page_banner_layout_custom_content",
+            "type": "wysiwyg",
+            "instructions": "Enter the content you would like to appear in the banner area.   You can insert forms, pictures and enter in your own text.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0
+        },
+        {
+            "key": "field_579e444d456ce",
+            "label": "Headline",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    },
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "!=",
+                        "value": "banner4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_579e444d4573b",
+            "label": "Headline (H1 Tag)",
+            "name": "page_banner_headline",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "default_value": "",
+            "delay": 0
+        },
+        {
+            "key": "field_579e444d457a9",
+            "label": "Headline Color",
+            "name": "page_banner_headline_color",
+            "type": "color_picker",
+            "instructions": "Select the font color of the headline",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_579e444d45816",
+            "label": "Headline Text Shadow Color",
+            "name": "page_banner_headline_text_shadow_color",
+            "type": "color_picker",
+            "instructions": "Select the text shadow color for the headline",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_579e444d45883",
+            "label": "Sub-headline (P tag)",
+            "name": "page_banner_subheadline",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "!=",
+                        "value": "banner4"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "!=",
+                        "value": "bannerinside"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "default_value": "",
+            "delay": 0
+        },
+        {
+            "key": "field_579e444d458f4",
+            "label": "Sub-Headline Color",
+            "name": "page_banner_subheadline_color",
+            "type": "color_picker",
+            "instructions": "Select the font color of the sub-headline",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "!=",
+                        "value": "banner4"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "!=",
+                        "value": "bannerinside"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_579e444d45961",
+            "label": "Sub-Headline Text Shadow Color",
+            "name": "page_banner_subheadline_text_shadow_color",
+            "type": "color_picker",
+            "instructions": "Select the text shadow color for the sub-headline",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "!=",
+                        "value": "banner4"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "!=",
+                        "value": "bannerinside"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_579e444d459cf",
+            "label": "Bullet Points",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    },
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "==",
+                        "value": "banner2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_579e444d45a3c",
+            "label": "Banner Bullet Point 1",
+            "name": "page_banner_bullet_point_1",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_579e444d45aaa",
+            "label": "Banner Bullet Point 2",
+            "name": "page_banner_bullet_point_2",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_579e444d45b17",
+            "label": "Banner Bullet Point 3",
+            "name": "page_banner_bullet_point_3",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_579e444d45b85",
+            "label": "Call to Action Button",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    },
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "==",
+                        "value": "banner1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    },
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "==",
+                        "value": "banner2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_579e444d45bf3",
+            "label": "Call to Action #1 Link",
+            "name": "page_banner_cta_link",
+            "type": "text",
+            "instructions": "Insert the page or anchor the call to action should link to.   Example - http:\/\/www.company.com\/page\/  or #appointment",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_579e444d45c60",
+            "label": "Call to Action #1 Text",
+            "name": "page_banner_cta_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_579e444d45ccf",
+            "label": "Text After Call to Action Button",
+            "name": "page_banner_after_cta_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "==",
+                        "value": "banner4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": 2,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57dc33f1fd16c",
+            "label": "Add Additional Call to Action Buttons?",
+            "name": "page_banner_cta_add_truefalse",
+            "type": "true_false",
+            "instructions": "If you would like to add additional Call to Action buttons, check the box below.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57dc2d144cd15",
+            "label": "How Many Additional Call to Action buttons do You Want?",
+            "name": "page_banner_cta_add_selector",
+            "type": "select",
+            "instructions": "Want to add more call to action buttons?  Select the number of additional call to action buttons below.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57dc33f1fd16c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "one": 1,
+                "two": 2,
+                "three": 3
+            },
+            "default_value": [],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_57dc2da04cd16",
+            "label": "Call to Action #2 Link",
+            "name": "page_banner_cta2_link",
+            "type": "text",
+            "instructions": "Insert the page or anchor the call to action should link to.   Example - http:\/\/www.company.com\/page\/  or #appointment",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "one"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "two"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "three"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57dc2e074cd19",
+            "label": "Call to Action #2 Text",
+            "name": "page_banner_cta2_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "one"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "two"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "three"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57dc2dd14cd17",
+            "label": "Call to Action #3 Link",
+            "name": "page_banner_cta3_link",
+            "type": "text",
+            "instructions": "Insert the page or anchor the call to action should link to.   Example - http:\/\/www.company.com\/page\/  or #appointment",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "two"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "three"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57dc2e304cd1a",
+            "label": "Call to Action #3 Text",
+            "name": "page_banner_cta3_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "two"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "three"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57dc2de44cd18",
+            "label": "Call to Action #4 Link",
+            "name": "page_banner_cta4_link",
+            "type": "text",
+            "instructions": "Insert the page or anchor the call to action should link to.   Example - http:\/\/www.company.com\/page\/  or #appointment",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "three"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57dc2e3d4cd1b",
+            "label": "Call to Action #4 Text",
+            "name": "page_banner_cta4_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57dc2d144cd15",
+                        "operator": "==",
+                        "value": "three"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_573a2843e143e",
+            "label": "Desktop Banner",
+            "name": "",
+            "type": "tab",
+            "instructions": "Upload the image to use for the banner of the homepage",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_580bbcb5cb332",
+            "label": "Select Desktop Banner Background",
+            "name": "page_desktop_banner_bg_select",
+            "type": "select",
+            "instructions": "<p>Choose the type of background you want for the desktop banner<\/p>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "No background (or define in CSS)",
+                "background": "Upload background",
+                "color": "Choose a solid color",
+                "gradient": "Choose a gradient"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_573a29b41d71a",
+            "label": "Upload Desktop Banner Image",
+            "name": "page_desktop_banner_image_upload",
+            "type": "image",
+            "instructions": "Upload the banner image to use for the desktop (large) version of your website.  Minimum width is 1920px.    This image will be used on screen sizes of 1024px wide and up.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580bbcb5cb332",
+                        "operator": "==",
+                        "value": "background"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": 1920,
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_580bbca1cb32e",
+            "label": "Select Desktop Banner Background Color",
+            "name": "page_desktop_banner_bg_color",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the background for the desktop banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580bbcb5cb332",
+                        "operator": "==",
+                        "value": "color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_580bbcaacb330",
+            "label": "Select Desktop Banner Background - Top Gradient Color",
+            "name": "page_desktop_banner_bg_color_top_gradient",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the starting (top) gradient color for the desktop banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580bbcb5cb332",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_580bbcaecb331",
+            "label": "Select Desktop Banner Background - Bottom Gradient Color",
+            "name": "page_desktop_banner_bg_color_bottom_gradient",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the starting (bottom) gradient color for the desktop banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580bbcb5cb332",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_573a2a39d8939",
+            "label": "Tablet Banner",
+            "name": "",
+            "type": "tab",
+            "instructions": "Upload the image to use for the banner of the homepage",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_580bbbf17dfc7",
+            "label": "Select Tablet Banner Background",
+            "name": "page_tablet_banner_bg_select",
+            "type": "select",
+            "instructions": "<p>Choose the type of background you want for the tablet banner<\/p>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "No background (or define in CSS)",
+                "background": "Upload background",
+                "color": "Choose a solid color",
+                "gradient": "Choose a gradient"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_573a2a82d893a",
+            "label": "Upload Tablet Banner Image",
+            "name": "page_tablet_banner_image_upload",
+            "type": "image",
+            "instructions": "Upload the banner image to use for the tablet (medium) version of your website.  Width should be 1024px.   This image will be used on screen sizes of 640px wide to 1023px wide.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580bbbf17dfc7",
+                        "operator": "==",
+                        "value": "background"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": 1024,
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_580bbc0f7dfc8",
+            "label": "Select Tablet Banner Background Color",
+            "name": "page_tablet_banner_bg_color",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the background for the tablet banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580bbbf17dfc7",
+                        "operator": "==",
+                        "value": "color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_580bbc347dfc9",
+            "label": "Select Tablet Banner Background - Top Gradient Color",
+            "name": "page_tablet_banner_bg_color_top_gradient",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the starting (top) gradient color for the tablet banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580bbbf17dfc7",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_580bbc527dfca",
+            "label": "Select Tablet Banner Background - Bottom Gradient Color",
+            "name": "page_tablet_banner_bg_color_bottom_gradient",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the starting (bottom) gradient color for the tablet banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580bbbf17dfc7",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_573a2accd893b",
+            "label": "Mobile Banner (Landscape View)",
+            "name": "",
+            "type": "tab",
+            "instructions": "Upload the image to use for the banner of the homepage",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_579e444d45580",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_580baf26523e0",
+            "label": "Select Mobile (Landscape) Background",
+            "name": "page_mobile_banner_bg_select",
+            "type": "select",
+            "instructions": "<p>Choose the type of background you want for the mobile banner. <\/p>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "No background (or define in CSS)",
+                "background": "Upload background",
+                "color": "Choose a solid color",
+                "gradient": "Choose a gradient"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_573a2adcd893c",
+            "label": "Upload Mobile Banner Image",
+            "name": "page_mobile_banner_image_upload",
+            "type": "image",
+            "instructions": "Upload the banner image to use for the mobile version of your website.  This will image will be used for landscape view on most popular mobile phones and as portrait view on some of the larger mobile phones.   Width should be 640 px.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580baf26523e0",
+                        "operator": "==",
+                        "value": "background"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": 640,
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_580baee3523df",
+            "label": "Select Mobile Banner Background Color",
+            "name": "page_mobile_banner_bg_color",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the background for the mobile banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580baf26523e0",
+                        "operator": "==",
+                        "value": "color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_580bb11bdadcc",
+            "label": "Select Mobile Banner Background - Top Gradient Color",
+            "name": "page_mobile_banner_bg_color_top_gradient",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the starting (top) gradient color for the mobile banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580baf26523e0",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_580bb15bdadce",
+            "label": "Select Mobile Banner Background - Bottom Gradient Color",
+            "name": "page_mobile_banner_bg_color_bottom_gradient",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the starting (bottom) gradient color for the mobile banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580baf26523e0",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_579e444d45ef3",
+            "label": "Set Up Form",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580d1eedd49c4",
+                        "operator": "==",
+                        "value": "banner3"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_579e444d45f60",
+            "label": "Select the Form to Display",
+            "name": "page_banner_form",
+            "type": "select",
+            "instructions": "Select the form that you would like to add to the banner.  You can set up a form by going to \"<a href=\"\/wp-admin\/admin.php?page=formidable\" target=\"_blank\">Lead Forms<\/a>\" in the left hand menu of your website theme.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "5": "Schedule an Appointment"
+            },
+            "default_value": [],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_579e444d45fce",
+            "label": "MOBILE DEVICES: Form Pop-up Button Text",
+            "name": "page_banner_form_mobile_popup",
+            "type": "text",
+            "instructions": "On mobile devices, we will show visitors a button that will open the form in a pop-up window.   Type the text that should appear on the button.  Leave blank if you do not want to show the form on mobile devices.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "css_property": "",
+            "css_selector": "",
+            "property_append": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5810dfcbdddc7",
+            "label": "Mobile Banner (Portrait View - 375px)",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5810dfeddddc8",
+            "label": "Select Mobile (Portrait) Banner Background",
+            "name": "page_xsmall_mobile_banner_bg_select",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "No background (or define in CSS)",
+                "background": "Upload background",
+                "color": "Choose a solid color",
+                "gradient": "Choose a gradient"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5810e04bdddca",
+            "label": "Upload Mobile (Portrait) Banner Image",
+            "name": "page_xsmall_mobile_banner_image_upload",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810dfeddddc8",
+                        "operator": "==",
+                        "value": "background"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5810e066dddcb",
+            "label": "Select Mobile (Portrait) Background Color",
+            "name": "page_xsmall_mobile_banner_bg_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810dfeddddc8",
+                        "operator": "==",
+                        "value": "color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5810e0af75fbb",
+            "label": "Select Mobile (Portrait) Background Gradient Color (Top)",
+            "name": "page_xsmall_mobile_banner_bg_color_top_gradient",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810dfeddddc8",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5810e0e175fbc",
+            "label": "Select Mobile (Portrait) Background Gradient Color (Bottom)",
+            "name": "page_xsmall_mobile_banner_bg_color_bottom_gradient",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810dfeddddc8",
+                        "operator": "==",
+                        "value": "gradient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 102,
+    "position": "acf_after_title",
+    "style": "acftc-group-0",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "discussion",
+        "comments",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1515014030
+}

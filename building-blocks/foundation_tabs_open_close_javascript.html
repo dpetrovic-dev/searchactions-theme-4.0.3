@@ -1,0 +1,120 @@
+<!-- **************************************************************************
+*******************************************************************************
+			
+      Foundation  TABS WITH ARROW POINTING DOWN AND JAVASCRIPT THAT WILL CLOSE OPEN TABS ON CLICK
+       ** has an issue with clicking from one tab to another.  Sometimes the content will not open on first click - have to click again
+                         
+*******************************************************************************
+*******************************************************************************-->
+<!--- CSS -->
+<style>
+/* IMPORTANT */
+.mobile_buttons .tabs-panel[aria-hidden="true"]{display:none!important;}
+.mobile_buttons .tabs-panel.is-active{display:block:!important}
+/* tabs title arrow down to content */
+.mobile_button_tabs .tabs-title.active.is-active::after{  
+	border-color: #403C8B transparent;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    top: .50rem;
+    content: "";
+    height: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 0;
+    width: 0;}
+
+/* END IMPORTANT */
+.tabs{background:#fff}
+.tabs.mobile_button_tabs{border:none;}
+.mobile_buttons .tabs_content_wrapper p{text-align:center}
+.mobile_buttons .tabs_content_wrapper p,
+.mobile_buttons .tabs_content_wrapper a{color: #2199e8;line-height:1.6;font-size:.95rem;text-decoration:underline}
+.mobile_buttons .tabs_content_wrapper ul li,
+.mobile_buttons .tabs_content_wrapper p,
+.mobile_buttons .tabs_content_wrapper img,
+.mobile_buttons .tabs_content_wrapper h2
+{margin-bottom:.5rem}
+.mobile_buttons .tabs_content_wrapper h2{font-size:1rem;}
+ .mobile_buttons .tabs_content_wrapper img{padding:.25rem;border:1px solid #e8e8e8;}
+ /* tabs title (buttons) */
+ .mobile_button_tabs .columns{padding:0;border:none;}
+ .mobile_button_tabs .columns.tabs-title{border-right:1px solid #e8e8e8;border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;}
+ .mobile_button_tabs .columns.tabs-title:last-child{border-right:none;}
+  .mobile_button_tabs .columns.tabs-title.is-active{border-bottom:none;border-right:1px solid #fff;}
+.tabs-title>a:focus, .tabs-title>a[aria-selected=true]{background:#403C8B;border-bottom:1px solid #403C8B;text-shadow:1px solid #1C1A3C}
+
+/* tab title link normal */
+
+.mobile_button_tabs .tabs-title,.mobile_button_tabs .columns.tabs-title.is-active{}
+.mobile_button_tabs .tabs-title>a,
+.mobile_button_tabs .tabs-title.is-active a{font-size:.75em;line-height:.95rem;font-weight:700;opacity:1.0;padding:.95rem 0 .5rem 0;text-transform:uppercase}
+
+/* font awesome icon arrow down */
+.mobile_button_tabs .tabs-title> a i{display:block;}
+.mobile_button_tabs .tabs-title.is-active> a i,
+.mobile_button_tabs .tabs-title.is-active> a:hover i{color:#fff;text-shadow:none;}
+.mobile_button_tabs .tabs-title.is-active.active> a i,
+.mobile_button_tabs .tabs-title.is-active.active> a:hover i{color:#403C8B;text-shadow:none;}
+/* tabs title link active/hover/focus */
+
+.mobile_button_tabs .tabs-title>a:hover,
+.mobile_button_tabs .tabs-title>a:focus,
+.mobile_button_tabs .tabs-title>a[aria-selected=true]{background:#403C8B;color:#fff;text-shadow:1px 1px 1px #1C1A3C}
+
+/* Active Tab Title and content below*/
+.mobile_buttons .tabs-panel .columns{border-right:none}
+.mobile_buttons .tabs-panel .tabs_content_wrapper{display:block;}
+.mobile_buttons .tabs-panel .cta_btn{color:#fff;line-height:inherit; margin-bottom:0;padding:.25rem  1rem;text-shadow:1px 1px 1px #8D2929}
+/* tab content */
+.mobile_button_tabs .tabs-panel.is-active{color:#403C8B;opacity:1.0}
+.mobile_button_tabs .tabs-content{border-right:none;border-left:none;}
+</style>
+
+<!--- JAVASCRIPT -->
+<script>
+  $('.mobile_buttons .tabs-title').click(function () {
+	$(this).toggleClass('active');
+  $('.tabs-panel.is-active').fadeToggle();
+});
+</script>
+
+<!--- HTML -->
+<div class="tabs mobile_button_tabs" data-tabs id="our_locations">
+  <div class="tabs-title small-4 columns"><a href="#aston">Aston <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a><span class="x">x</span></div>
+  <div class="tabs-title small-4 columns"><a href="#malvern">Malvern <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></div>
+<div class="tabs-title small-4 columns"><a href="#wilmington">Wimington <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></div>
+</div>
+
+<div class="tabs-content" data-tabs-content="our_locations">
+  <div class="tabs-panel" id="aston">
+    <div class="tabs_content_wrapper">
+        <div class="row">
+        <div class="small-12 columns">
+        <h2>Badell's Collision of <span>Aston</span></h2>
+        <img class="img-center" src="/wp-content/uploads/auto-body-shop-aston.jpg" alt="auto-body-shop-aston" width="346" height="180">
+        <ul>
+        <li>143 Conchester Highway Aston, PA 19014</li>
+        <li>Directions: <a href="https://goo.gl/maps/acrfRagmPZD2" title="Google Directions to Badell's Collision Aston, PA" target="_blank">Click Here</a></li>
+        <li>Phone: <a href="tel:6104854411">(610) 485-4411</a></li>
+        <li>Fax: (610) 497-8887</li>
+        <li>Email: <a href="mailto:info@badellscollision.com">info@badellscollision.com</a></li>
+        </ul>
+
+        </div>
+        </div>
+  </div>
+  </div>
+  <div class="tabs-panel content" id="malvern">
+       <div class="tabs_content_wrapper">
+<p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+</div>
+</div>
+<div class="tabs-panel" id="wilmington">
+     <div class="tabs_content_wrapper">
+<p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+</div>
+</div>
+  </div>

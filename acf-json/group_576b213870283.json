@@ -1,0 +1,132 @@
+{
+    "key": "group_576b213870283",
+    "title": "Enable Sidebar?",
+    "fields": [
+        {
+            "key": "field_576b215897ac4",
+            "label": "Enable Sidebar",
+            "name": "page_enable_sidebar",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5819e4ffc0ff1",
+            "label": "Choose Sidebar",
+            "name": "page_choose_sidebar",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_576b215897ac4",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "sidebar1": "Sidebar 1",
+                "sidebar2": "Sidebar 2",
+                "sidebar3": "Sidebar 3",
+                "sidebar4": "Sidebar 4",
+                "whitepaper1": "Whitepaper Sidebar 1",
+                "whitepaper2": "Whitepaper Sidebar 2",
+                "whitepaper3": "Whitepaper Sidebar 3",
+                "whitepaper4": "Whitepaper Sidebar 4",
+                "whitepaper5": "Whitepaper Sidebar 5"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "privacy.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "sitemap.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "terms.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "whitepaper"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "acftc-group-0",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1516824704
+}

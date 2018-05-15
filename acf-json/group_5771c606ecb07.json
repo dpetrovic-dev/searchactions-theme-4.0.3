@@ -1,0 +1,164 @@
+{
+    "key": "group_5771c606ecb07",
+    "title": "Select Global Page Layout",
+    "fields": [
+        {
+            "key": "field_57e545276610e",
+            "label": "Blog",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5771c6490de7d",
+            "label": "Blog Layout",
+            "name": "global_blog_layout_selector",
+            "type": "select",
+            "instructions": "Select either a full width or boxed layout for the blog.  ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "full": "Full",
+                "box": "Box"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_57e545356610f",
+            "label": "Pages",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_577290ba88f1a",
+            "label": "Page Layout",
+            "name": "global_page_layout_selector",
+            "type": "select",
+            "instructions": "Select either a full width or boxed layout for the pages on your site.   You can override this setting on individual pages.  ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "full": "Full",
+                "box": "Box"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_57e2bba089247",
+            "label": "Put Content Area Into a Box (Entire Site)?",
+            "name": "global_overlay_content_area_boxed",
+            "type": "true_false",
+            "instructions": "Check the box if you want the content area of the pages to be in a boxed format, even if using a fullwidth layout.  With this option selected, the header and footer will be fullwidth, but the content area will be boxed.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5771c6490de7d",
+                        "operator": "==",
+                        "value": "box"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57eda7557f407",
+            "label": "Do Not Enable Boxed Content For Homepage",
+            "name": "global_overlay_content_area_boxed_no_homepage",
+            "type": "true_false",
+            "instructions": "Select this box if you want the content area to be boxed on inside pages, but NOT on the homepage",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57e2bba089247",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-layout"
+            }
+        ]
+    ],
+    "menu_order": 6,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1486947258
+}

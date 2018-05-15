@@ -1,0 +1,1120 @@
+{
+    "key": "group_57d724af7c36a",
+    "title": "Setup Header",
+    "fields": [
+        {
+            "key": "field_57d7345c12856",
+            "label": "Overlay",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57d724af85be2",
+            "label": "Show Overlay?",
+            "name": "global_header_overlay_truefalse",
+            "type": "true_false",
+            "instructions": "Check the box if you would to lay the navigation and banner on top of an overlay.  You can select the overlay background color or image next.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59ac75f0adca8",
+            "label": "Only Show Overlay on Home Page?",
+            "name": "global_header_overlay_homepage_only_truefalse",
+            "type": "true_false",
+            "instructions": "Check the box if you would to show the overlay on pages other than the homepage",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d724af85be2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57d80d6114aee",
+            "label": "Make Logo White",
+            "name": "global_logo_white_truefalse",
+            "type": "true_false",
+            "instructions": "Check the box if you are using an overlay and want to make the logo white so that it stands out",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d724af85be2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57d72628443c7",
+            "label": "Choose the Type of Background You Would Like",
+            "name": "global_overlay_bg_select",
+            "type": "select",
+            "instructions": "<p>Select whether you would like to use an image or a solid color as the background for the overlay.<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d724af85be2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 100,
+                "class": "step_two",
+                "id": ""
+            },
+            "choices": {
+                "color": "Select a solid color",
+                "image": "Upload an Image"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_57d7262d443c8",
+            "label": "Upload Overlay Background Image",
+            "name": "global_overlay_bg_img",
+            "type": "image",
+            "instructions": "<p>Upload an image to use as the background for the banner on the inside pages.  You can over-ride this setting on individual pages.  For the best results, make sure the image is 1920px wide for full width layout and 1280px for boxed layout.<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d72628443c7",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57d72632443c9",
+            "label": "Select Banner Background Color",
+            "name": "global_overlay_bg_color",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the background for the banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d72628443c7",
+                        "operator": "==",
+                        "value": "color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_57d7347512857",
+            "label": "Navigation Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57d724af85c37",
+            "label": "Navigation Layout",
+            "name": "global_navigation_layout_select",
+            "type": "select",
+            "instructions": "Select the navigation layout",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "menu1": "Logo left, menu right (Menu 1)",
+                "menu2": "Logo left, menu right , ceiling nav on top (Menu 2)",
+                "menu3": "Logo left, vertically centered menu and ceiling on right (Menu 3)",
+                "menu4": "Logo sitting above main navigation (Menu 4)"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_57d814b7865d2",
+            "label": "Make Navigation Sticky?",
+            "name": "global_stickynav_truefalse",
+            "type": "true_false",
+            "instructions": "Check the box if you would to like the navigation to stick to the top of the page when the user scrolls down",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57ee95e972f79",
+            "label": "Height of Top Bar (Needed for Magellan Scrolling)",
+            "name": "global_stickynav_top_bar_height",
+            "type": "text",
+            "instructions": "<p>Type in the height of the top bar so that magellan scrolling feature lands in the correct location.  If not set, the landing spot could be off when scrolling to a an anchor link.   This will only help scrolling to theme elements that are preset.  Custom elements will need the following code added to the anchor link (not target link): <\/p>\r\n\r\n<p><code>data-magellan data-bar-offset=\"xx\"<\/code><\/p>\r\n<p> (xx= the height of top-bar.  do not include %, px,em,rem,etc) <\/code><\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d814b7865d2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57e2c6a089bbe",
+            "label": "Make Nav a Floating Nav?",
+            "name": "global_floatingnav_truefalse",
+            "type": "true_false",
+            "instructions": "Check the box if you would to like the navigation to float on top of the Overlay background.  Instead of being a full width menu at the top of the screen, it will float in a box with a top margin.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d724af85be2",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57d724af85c37",
+                        "operator": "==",
+                        "value": "menu1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57d724af85be2",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57d724af85c37",
+                        "operator": "==",
+                        "value": "menu2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5830e0b4bd492",
+            "label": "Make Last Nav Item a Call to Action Button?",
+            "name": "global_navigation_calltoaction_truefalse",
+            "type": "true_false",
+            "instructions": "Check the box if you would to like to make the last menu item in the navigation a Call to Action button",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d724af85be2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57d724af85be2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57d82303aeb66",
+            "label": "Ceiling Nav (Top Nav Bar)",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d724af85c37",
+                        "operator": "==",
+                        "value": "menu2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57d724af85c37",
+                        "operator": "==",
+                        "value": "menu3"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_57d724af85c37",
+                        "operator": "==",
+                        "value": "menu4"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57d812319a986",
+            "label": "Show Ceiling?",
+            "name": "global_ceiling_truefalse",
+            "type": "true_false",
+            "instructions": "Check the box if you would to display the ceiling navigation, which is a navigation menu that sits above main navigation menu",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d724af85c37",
+                        "operator": "!=",
+                        "value": "menu1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_577a873d3259d",
+            "label": "Ceiling Layout",
+            "name": "global_ceiling_layout_select",
+            "type": "select",
+            "instructions": "Select whether you would like search bar and phone number aligned left, right or split (search bar on right, phone number on left).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d812319a986",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57d724af85c37",
+                        "operator": "!=",
+                        "value": "menu3"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Aligned Left",
+                "right": "Aligned Right",
+                "split": "Split"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_57d8235acc6bc",
+            "label": "Select Ceiling Background Color",
+            "name": "global_ceiling_bg_color",
+            "type": "color_picker",
+            "instructions": "<p>Choose a color to use as the background for the banner<\/p>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d812319a986",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_57d74b05fb5cd",
+            "label": "Show Search Bar?",
+            "name": "global_ceiling_search_truefalse",
+            "type": "true_false",
+            "instructions": "Check the box if you would to display a search bar in the ceiling navigation",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d812319a986",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_583098df33b0e",
+            "label": "Searchford Code",
+            "name": "global_ceiling_searchford_code",
+            "type": "text",
+            "instructions": "Create a search in the Searchford Plugin  and enter in the short code here.   If it does not display, try using single quotes within the shortcode instead of double quotes (or vice versa).   <br><a href=\"\/wp-admin\/edit.php?post_type=searchford\" target=\"_blank\">Click here to create a search and get the shortcode here<\/a>.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d74b05fb5cd",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_57d8231faeb67",
+            "label": "Mobile Buttons",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_577e6fd2c8851",
+            "label": "Show Mobile Nav Buttons?",
+            "name": "global_mobile_buttons_selector",
+            "type": "true_false",
+            "instructions": "Check the box below if you would to show the mobile nav buttons at the top of the site on mobile phones (EXAMPLE - Call Us, Find Us, Hours).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57fa5db0e452a",
+            "label": "Add a Class",
+            "name": "global_mobile_buttons_custom_class",
+            "type": "text",
+            "instructions": "Add a class to the top parent element wrapping the custom buttons.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_57ee9952dec25",
+            "label": "Which Type of Button Would You Like?",
+            "name": "global_mobile_buttons_custom_select",
+            "type": "select",
+            "instructions": "This option will insert 3 buttons that sit at the top of the site (underneath logo) on mobile and tablet layouts (smaller than 1024px).  These buttons give users a quick way to navigate the site, call the business or access other content in one click.  Select how you would like to display the buttons by choosing an option below:<br><br>\r\n<strong>Default Buttons<\/strong><br>\r\nThese are links only.  You can change the links and labels of the buttons. <br><br>\r\n\r\n<strong>Tabbed Buttons<\/strong><br>\r\nTabbed buttons will expand when clicked to display content underneath them.  One Tab is used for the main navigation of the site.  The remaining two tabs can be customized with your own content.  <span style=\"color:red\">(if using this option, remove the mobile menu plugin IE - taptap)<\/span><br><br>\r\n\r\n<strong>Custom Buttons<\/strong><br>\r\nDesign your own buttons or use this area for other purposes.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "tab": "Tabbed Navigation",
+                "custom": "Custom"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5827518a59a89",
+            "label": "Custom Buttons",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57ee9952dec25",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57fa5b7332184",
+            "label": "Custom Mobile Buttons",
+            "name": "global_mobile_buttons_custom",
+            "type": "textarea",
+            "instructions": "Use the box below to put in your custom HTML for the mobile buttons.  (This container has a parent element with a class of .row).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57ee9952dec25",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5827530c424bd",
+            "label": "Default Buttons",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57ee9952dec25",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<strong>Default Buttons<\/strong>\r\n<hr>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_58af09d0b70a4",
+            "label": "Logo",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57ee9952dec25",
+                        "operator": "==",
+                        "value": "tab"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58af0a0eb70a6",
+            "label": "Upload Logo",
+            "name": "global_mobile_buttons_tabbed_mobile_logo",
+            "type": "image",
+            "instructions": "Upload the logo for mobile devices.  This will show above the tabs since removing the taptap plugin will also remove the logo on mobile devices.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59a32d87ab6b9",
+            "label": "Default Mobile Buttons",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57ee9952dec25",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59a328fd3954d",
+            "label": "Add Mobile Buttons (new)",
+            "name": "global_mobile_buttons",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57ee9952dec25",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_59a329223954e",
+                    "label": "Label",
+                    "name": "global_mobile_buttons_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Type the label for this button",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59a3293a3954f",
+                    "label": "Icon",
+                    "name": "global_mobile_buttons_icon",
+                    "type": "text",
+                    "instructions": "If you would like to use an icon from the Font-Awesome library, enter in the code here. Format should be fa-icon. <a href=\"http:\/\/fontawesome.io\/icons\/\">Click here for a list of icons<\/a>.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59a3298b39550",
+                    "label": "Link",
+                    "name": "global_mobile_buttons_link",
+                    "type": "text",
+                    "instructions": "Type in the link of the button. Do not include http:\/\/www.domain.com. If you would like the button to dial a phone number, use the following format:\r\n\r\n<code>tel:+16103637623<\/code>",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5827531a424be",
+            "label": "Left Tab (Navigation)",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57ee9952dec25",
+                        "operator": "==",
+                        "value": "tab"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58275a78871b9",
+            "label": "Navigation Menu",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57ee9952dec25",
+                        "operator": "==",
+                        "value": "tab"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The first tab is used for the navigation menu and will use the main navigation items you selected in <a href=\"\/wp-admin\/nav-menus.php\" target=\"_blank\">Appearance > Menus<\/a>.   <br><br>\r\n<span style=\"color:red\">You will no longer need a responsive menu if using the tabbed buttons.  Make sure to delete the responsive navigation plugin being used on the site - normally this is the taptap plugin. <\/span>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_58277062b9e07",
+            "label": "Label",
+            "name": "global_mobile_buttons_tabbed_left_tab_label",
+            "type": "text",
+            "instructions": "Type the label of the button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Menu",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58275a14871b5",
+            "label": "Middle Tab",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57ee9952dec25",
+                        "operator": "==",
+                        "value": "tab"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58276ef43b6bc",
+            "label": "Label",
+            "name": "global_mobile_buttons_tabbed_middle_tab_label",
+            "type": "text",
+            "instructions": "Type the label of the button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Ex:  About Us",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_582759e1871b4",
+            "label": "Content",
+            "name": "global_mobile_buttons_tabbed_middle_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_58275a3f871b6",
+            "label": "Right Tab",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_577e6fd2c8851",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57ee9952dec25",
+                        "operator": "==",
+                        "value": "tab"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58276f203b6bd",
+            "label": "Label",
+            "name": "global_mobile_buttons_tabbed_right_tab_label",
+            "type": "text",
+            "instructions": "Type the label of the button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Ex:  About Us",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58275a50871b8",
+            "label": "Content",
+            "name": "global_mobile_buttons_tabbed_right_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-header"
+            }
+        ]
+    ],
+    "menu_order": 6,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1514849527
+}

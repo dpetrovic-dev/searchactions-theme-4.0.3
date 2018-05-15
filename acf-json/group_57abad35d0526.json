@@ -1,0 +1,113 @@
+{
+    "key": "group_57abad35d0526",
+    "title": "Blog Settings",
+    "fields": [
+        {
+            "key": "field_57abad35d8283",
+            "label": "Set Default Featured Image Thumbnail",
+            "name": "global_blog_featured_image_thumbnail",
+            "type": "image",
+            "instructions": "<p>The Featured Image Thumbnail image will be shown for blog posts <a href=\"\/blog\" target=\"_blank\">on the main blog page<\/a> and on other pages that list out blog articles.  <\/p> \r\n<p>You can upload a thumbnail image for individual blog posts, but we recommend uploading a default image here in case you forget to upload a thumbnail image on a blog post.   This default thumbnail image will only be used in the event the thumbnail image is not set for a specific blog post.  <\/p>\r\n<p><strong>Directions:<\/strong> Upload an image that is 370px <span style=\"color:black;font-weight:bold\">x<\/span> 370px. <\/p>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": 368,
+            "min_height": 368,
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57acb0c9b83a4",
+            "label": "Display Author's Picture?",
+            "name": "global_blog_display_authors_picture",
+            "type": "true_false",
+            "instructions": "<p>The author's picture is displayed on blog posts that the author has published.   If you would like to display a picture of the author, you can upload the author picture by <a href=\"\/wp-admin\/users.php\" target=\"_blank\">going to users<\/a> > and then selecting the user you would like to upload a picture for.  Once in the user settings, scroll down the page and look for the <strong>About Yourself<\/strong> section.   The image size should be 100px x 100px<\/p>\r\n<p>If you do not want to display the author picture, leave the box below unchecked.   <\/p>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_58a0cf38cc41f",
+            "label": "Enable Sidebar For All Blog Posts?",
+            "name": "global_page_enable_sidebar",
+            "type": "true_false",
+            "instructions": "This will enable the sidebar for all blog posts.   You can over-ride this on individual blog posts if you would like.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_58a0cf38cc494",
+            "label": "Choose Sidebar",
+            "name": "global_page_choose_sidebar",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "sidebar1": "Sidebar 1",
+                "sidebar2": "Sidebar 2",
+                "sidebar3": "Sidebar 3",
+                "sidebar4": "Sidebar 4"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-blog"
+            }
+        ]
+    ],
+    "menu_order": 125,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1503860323
+}

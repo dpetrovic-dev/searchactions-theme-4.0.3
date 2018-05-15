@@ -1,0 +1,433 @@
+{
+    "key": "group_577a9416c871d",
+    "title": "Set Up Footer",
+    "fields": [
+        {
+            "key": "field_57d82e4ce5f1c",
+            "label": "Display Options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57d838e1090d9",
+            "label": "Choose Footer to Display",
+            "name": "global_footer_selector",
+            "type": "select",
+            "instructions": "<p>Choose the the content you would like to show in the footer.   You can choose from the following footers:<br><\/br>\r\n1. <strong>Default Footer<\/strong>: shows location, hours, directions, pages, latest articles and email subscription form<\/br>\r\n2.  <strong>Widgets<\/strong>: 4 Column Footer setup using the <a href=\"\/wp-admin\/widgets.php\">\"WordPress Widgets\"<\/a><\/br>\r\n3. <strong>Custom Footer<\/strong>:  Blank row that allows you to enter in your own html<\/p>\r\n<p>To customize the \"Widgets\" Footer, go to the <a href=\"\/wp-admin\/widgets.php\">\"Widget Settings\"<\/a> and drag the widgets you would like to display into the corresponding widget containers.  The containers for the footer are Footer 1, Footer 2, Footer 3 and Footer 4. <\/p>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Use Default Footer",
+                "widgets": "Use Widgets",
+                "custom": "Custom Footer"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58ae0e8ea2dfa",
+            "label": "Custom Footer",
+            "name": "global_footer_custom_footer",
+            "type": "wysiwyg",
+            "instructions": "Put your custom html here.   The parent element is a row",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d838e1090d9",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_577a960107ac4",
+            "label": "Display Directions?",
+            "name": "global_footer_display_directions",
+            "type": "true_false",
+            "instructions": "Choose whether or not to display a directions to your business.   Setup directions Links under <a href=\"\/wp-admin\/admin.php?page=acf-options-company-settings\">\"Company Settings\"<\/a>.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d838e1090d9",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_577a963807ac5",
+            "label": "Display Social Media Links?",
+            "name": "global_footer_display_social",
+            "type": "true_false",
+            "instructions": "Choose whether or not to display a Social Media Links.   Setup Social Media Links under <a href=\"\/wp-admin\/admin.php?page=acf-options-social-media-settings\">\"Social Media Settings\"<\/a>.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d838e1090d9",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_577a965607ac6",
+            "label": "Display MailChimp Email Subscription Form?",
+            "name": "global_footer_display_email_subscribe",
+            "type": "true_false",
+            "instructions": "Choose whether or not to display a Mailchimp Email Newsletter Subscription Form.   When connected to MailChimp, this will allow users to join your MailChimp mailing list automatically, without manual action from you.    In order to use this feature, you must connect MailChimp to the website by doing the following: <br>\r\n<ol>\r\n<li>Setup an account with MailChimp: <a href=\"https:\/\/login.mailchimp.com\/signup\" target=\"_blank\">Click Here<\/a><\/li>\r\n<li>Setup an email list in your MailChimp account:  <a href=\"http:\/\/kb.mailchimp.com\/lists\/growth\/getting-started-with-lists\" target=\"_blank\">Instructions<\/a><\/li>\r\n<li>Enter in your MailChimp API Key on this website:   <a href=\"\/wp-admin\/admin.php?page=formidable-settings\" target=\"_blank\">Click Here<\/a><\/li>\r\n<\/ol>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57d838e1090d9",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57d82eace5f1d",
+            "label": "Call To Action Bar",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57ab165eaf6ae",
+            "label": "Display Call to Action Bar?",
+            "name": "global_footer_display_call_to_action",
+            "type": "true_false",
+            "instructions": "Choose whether or not to display a Call to Action bar above footer.  This will display on all pages of website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57e94cb27859a",
+            "label": "Design Your Own Call to Action Bar?",
+            "name": "global_footer_display_custom_call_to_action_truefalse",
+            "type": "true_false",
+            "instructions": "If you would like to make your own Call to Action Bar rather than used the pre-designed one, check the box.  If you choose to design your own, the container has no columns (only a row).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57ab165eaf6ae",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_57e94de77859b",
+            "label": "Custom Call to Action",
+            "name": "global_footer_display_custom_call_to_action",
+            "type": "wysiwyg",
+            "instructions": "Make your own Call to Action Bar.   There are no elements or HTML included in this custom CTA Bar (no section, row or column elements).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57ab165eaf6ae",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57e94cb27859a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_57ab14c0d19c4",
+            "label": "Call to Action Headline (H2)",
+            "name": "global_footer_call_to_action_headline",
+            "type": "wysiwyg",
+            "instructions": "Type the headline of the call to action.    It will be surrounded by H2 header tags.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57ab165eaf6ae",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57e94cb27859a",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_57ab1731af6af",
+            "label": "Call to Action Sub-Headline",
+            "name": "global_footer_call_to_action_subheadline",
+            "type": "wysiwyg",
+            "instructions": "Type the subheadline of the Call to Action.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57ab165eaf6ae",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57e94cb27859a",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_57ab174eaf6b0",
+            "label": "Call to Action Link Text",
+            "name": "global_footer_call_to_action_text",
+            "type": "text",
+            "instructions": "Type the text of the Call to Action button.   This is the text that will display in the button.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57ab165eaf6ae",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57e94cb27859a",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_57ab818b96c6e",
+            "label": "Call to Action URL",
+            "name": "global_footer_call_to_action_link",
+            "type": "text",
+            "instructions": "Type in the link of the page you would like users to go to after clicking the button.   You may use full URL (http:\/\/www.domain.com\/page) or relative URL (\/page).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57ab165eaf6ae",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_57e94cb27859a",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5813a0bcb90e7",
+            "label": "Social Media Bar",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5813a10bb90e8",
+            "label": "Display Social Media Bar?",
+            "name": "global_footer_display_social_media_bar",
+            "type": "true_false",
+            "instructions": "The social media bar sits in between the copyright bar and the footer and displays social media icons for the social media pages you have entered into the <a href=\"\/wp-admin\/admin.php?page=acf-options-social-media-settings\" target=\"_blank\">social media settings<\/a> page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer"
+            }
+        ]
+    ],
+    "menu_order": 6,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1494274489
+}
